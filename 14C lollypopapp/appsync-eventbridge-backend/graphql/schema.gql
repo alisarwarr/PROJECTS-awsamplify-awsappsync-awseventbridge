@@ -1,0 +1,30 @@
+type Event {
+   result: String
+}
+
+type lollypopType {
+   id: ID!
+   topColor: String!
+   middleColor: String!
+   bottomColor: String!
+   to: String!
+   message: String!
+   from: String!
+}
+
+type Query {
+   allLollypop: [lollypopType]
+   getLollypopById(id: String!): lollypopType
+}
+
+type Mutation {
+   addLollypop(
+      id: ID!
+      topColor: String!
+      middleColor: String!
+      bottomColor: String!
+      to: String!
+      message: String!
+      from: String!
+   ): Event
+}

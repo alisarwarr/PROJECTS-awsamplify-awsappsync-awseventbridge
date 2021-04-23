@@ -1,0 +1,150 @@
+.root {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #7dd673;
+
+    .card {
+        width: 60%;
+               
+        .base {
+            label {
+                margin-top: 1.75rem;
+                font-family: monospace;
+                text-align: center;
+                width: 100%;
+                span {
+                    padding: 0.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    line-height: 1.75rem;
+                }
+            }
+    
+            table {
+                border: 3px double yellow;
+                margin: 0 auto;
+                width: 90%;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                margin-top: -0.4rem;
+    
+                th {
+                    text-align: center;
+                    font-weight: normal;
+                    font-family: 'Langar', cursive;
+                    letter-spacing: 0.08rem;
+                    word-spacing: 0.3rem;   
+                    font-size: 1rem; 
+                }
+    
+                thead {
+                    th {
+                        font-weight: bold;
+                        letter-spacing: 0.15rem;
+                    }
+                }
+
+                tbody {
+                    .text {
+                        text-align: left;
+                        span {
+                            font-size: 1rem; 
+                            display: flex;
+                            align-items: center;
+                            margin-left: 0.75rem;
+                        }
+                    }
+                }
+            }    
+        }
+
+        .body {
+            padding-top: 2.035rem;
+            padding-bottom: 2rem;
+            margin-left: 0.25rem;
+
+            textarea {
+                margin: 0 auto;
+                height: 80%;
+                width: 90%;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                font-family: monospace;
+            }
+
+            .btn {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 1.45rem;
+                button {
+                    font-family: 'Langar', cursive !important;
+                    font-size: 1.025rem;
+                    letter-spacing: 0.05rem;
+                    word-spacing: 0.18rem;    
+                }
+            }
+        }
+    }    
+}
+
+.err {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #7dd673;
+}
+
+@media (max-width: 700px) {
+    .root {
+        .card {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .root {
+        .card {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 485px) {
+    .root {
+        .card {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 250px) {
+    .root {
+        .card {
+            .body {
+                margin-top: 0.035rem !important;
+                margin-bottom: 2rem !important;
+                .btn {
+                    margin-top: 4.45rem;
+                }
+            }
+        }
+    }
+}

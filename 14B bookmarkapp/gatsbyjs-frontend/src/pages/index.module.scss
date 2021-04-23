@@ -1,0 +1,325 @@
+.body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bodyconditionalforontop {
+    //REMAINS AT TOP
+    position: sticky;
+    top: 0;
+    //overriding 'position: absolute;'
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .collect {
+        width: 60%;
+        height: 97.4%;
+        
+        &_content {
+            padding: 2.65rem;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .first {
+                margin-top: 2.25rem;
+            }
+
+            .second {
+                margin-top: 1.165rem;
+            }
+            
+            .third {
+                margin-top: 1.295rem;
+            }
+
+            div {
+                label {
+                    font-family: 'Langar', cursive;
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1rem;
+                }    
+                input {
+                    margin-top: -0.55rem;
+                }
+            }    
+        }
+    }
+
+    .title {
+        font-size: 3rem;
+        font-family: 'Langar', cursive !important;
+        letter-spacing: 0.12rem;
+        word-spacing: 0.4625rem;
+        margin-top: -0.2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 57.4%;
+        padding: 0.005rem;
+        border-radius: 2px;
+        p {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 1.2rem;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding-bottom: 1.4rem;
+
+        p {
+            flex: 1;
+            .button {
+                width: 27.5%;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                font-family: 'Langar', cursive;
+                line-height: 1.775rem;
+                flex: 1;
+            }
+        }
+
+        .iconbutton {
+            margin-top: -0.865rem;
+        }
+    }
+
+    .collection {
+        width: 100%;
+
+        .card {
+            width: 100%;
+            margin-top: 0.8rem;
+            /* Animation */
+            transition: transform 450ms;
+
+            &_content {
+                padding: 1rem;
+
+                &_top {
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        flex: 1;
+                        font-family: 'Langar', cursive !important;
+                        letter-spacing: 0.1rem;
+                        word-spacing: 0.4625rem;
+                        margin-left: 0.615rem;
+                    }
+                }
+    
+                &_bottom {
+                    margin-left: 0.615rem;
+
+                    a {
+                        color: blue;
+                        text-decoration: underline;
+                        font-size: 1rem;
+                        font-family: 'Langar', cursive;
+                        letter-spacing: 0.03rem;
+                    }
+
+                    small {
+                        font-family: 'Langar', cursive;
+                    }
+                }
+            }
+        }
+
+        .card:hover {
+            /* Animation */
+            transform: scale(1.035);
+            opacity: 1;
+        }
+
+        padding: 1.3rem;
+    }
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.err {
+    font-family: sans-serif;
+    font-size: 0.745rem;
+    letter-spacing: 0.3px;
+    margin-top: 0.305rem;
+    margin-left: 0.1rem;
+    letter-spacing: 0.08rem;
+    word-spacing: 0.04rem;
+    font-family: monospace;
+}
+
+
+
+
+
+@media (max-width: 1220px) {
+    .title {
+        font-size: 2.8rem !important;
+    }
+}
+@media (max-width: 1040px) {
+    .title {
+        font-size: 2.6rem !important;
+    }
+}
+@media (max-width: 935px) {
+    .collect {
+        &_content {
+            .title {
+                width: 60% !important;
+            }
+        }
+    }
+}
+@media (max-width: 845px) {
+    .collect {
+        &_content {
+            .title {
+                width: 65% !important;
+                font-size: 2.7rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 810px) {
+    .collect {
+        &_content {
+            .title {
+                width: 70% !important;
+                font-size: 2.775rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 790px) {
+    .collect {
+        &_content {
+            .title {
+                width: 73.5% !important;
+                font-size: 2.9rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 745px) {
+    .collect {
+        &_content {
+            .title {
+                width: 76.5% !important;
+                font-size: 3rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 711px) {
+    .collect {
+        &_content {
+            .title {
+                width: 79.5% !important;
+            }
+        }
+    }
+}
+@media (max-width: 688px) {
+    .collect {
+        &_content {
+            .title {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .collect {
+        &_content {
+            .title {
+                border-radius: 0;
+            }
+        }
+    }
+}
+@media (max-width: 486px) {
+    .collect {
+        &_content {
+            .title {
+                font-size: 2.25rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .collect {
+        width: 70% !important;
+    }
+}
+@media (max-width: 454px) {
+    .collect {
+        &_content {
+            .title {
+                width: 80% !important;
+                font-size: 2.2rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 445px) {
+    .collect {
+        &_content {
+            .title {
+                width: 84.75% !important;
+                font-size: 2rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .collect {
+        &_content {
+            .title {
+                width: 74.75% !important;
+            }
+        }
+    }
+}
+@media (max-width: 324px) {
+    .collect {
+        &_content {
+            .title {
+                width: 100% !important;
+            }
+        }
+    }
+}

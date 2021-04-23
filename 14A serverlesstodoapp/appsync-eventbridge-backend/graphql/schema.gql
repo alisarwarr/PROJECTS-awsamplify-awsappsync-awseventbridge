@@ -1,0 +1,27 @@
+type Event {
+   result: String
+}
+
+type todosType {
+   id: ID!
+   detail: String!
+}
+
+type Query {
+   allTodos: [todosType]
+}
+
+type Mutation {
+   createTodo(id: ID!, detail: String!): Event
+   deleteTodo(id: ID!): Event
+   updateTodo(id: ID!, detail: String!): Event
+}
+
+type Subscription {
+   onCreateTodo: Event
+      @aws_subscribe(mutations: ["createTodo"])
+   onDeleteTodo: Event
+      @aws_subscribe(mutations: ["deleteTodo"])
+   onUpdateTodo: Event
+      @aws_subscribe(mutations: ["updateTodo"])
+}

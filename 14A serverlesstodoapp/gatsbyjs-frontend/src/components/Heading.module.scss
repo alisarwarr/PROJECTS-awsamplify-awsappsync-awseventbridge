@@ -1,0 +1,68 @@
+.heading {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    p {
+        color: rgb(41, 29, 29);
+        text-align: center;
+        font-weight: bold !important;
+        font-family: 'Langar', cursive !important;
+        letter-spacing: 0.3rem !important;
+        word-spacing: 0.35rem !important;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .heading {
+        p {
+            font-size: 2.75rem !important;
+        }
+    }
+}
+
+@media (max-width: 250px) {
+    .heading {
+        p {
+            font-size: 3.5rem !important;
+            letter-spacing: 0.45rem !important;
+            word-spacing: 0.265rem !important;
+        }
+    }
+}
+
+@media (max-width: 225px) {
+    .heading {
+        p {
+            font-size: 5rem !important;
+        }
+    }
+}
+
+@media (max-width: 220px) {
+    .heading {
+        p {
+            font-size: 7rem !important;
+        }
+    }
+}
+
+@media (max-width: 210px) {
+    .heading {
+        p {
+            font-size: 9.75rem !important;
+        }
+    }    
+}
+
+@media (max-width: 190px) {
+    .heading {
+        p {
+            font-size: 16.75rem !important;
+            letter-spacing: 0.925rem !important;
+            word-spacing: 2.675rem !important;
+        }
+    }    
+}

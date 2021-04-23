@@ -1,0 +1,47 @@
+.message {
+    margin-top: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+    //sample jumbotron code
+    .jumbotron {
+        background-color: transparent;
+        position: relative;
+        padding:0 !important;
+        text-align:center;
+        margin-bottom: 0 !important;
+    }
+    //sample jumbotron code
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        span {
+            font-size: 3rem;
+            font-family: 'Langar', cursive;
+            letter-spacing: 0.185rem;    
+        }
+        
+        div {
+            margin-left: 0.5rem;
+            margin-top: 0.3rem;
+        }
+    }
+}
+
+@media (max-width: 240px) {
+    .loading {
+        h1 {
+            span {
+                font-size: 3.35rem !important;
+            }
+        }
+    }
+}

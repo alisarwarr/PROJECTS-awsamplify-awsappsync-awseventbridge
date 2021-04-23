@@ -1,0 +1,26 @@
+type Event {
+   result: String
+}
+
+type bookmarkType {
+   id: ID!
+   title: String!
+   url: String!
+   description: String!
+}
+
+type Query {
+   allBookmarks: [bookmarkType]
+}
+
+type Mutation {
+   addBookmark(id: ID!, title: String!, url: String!, description: String!): Event
+   delBookmark(id: ID!): Event
+}
+
+type Subscription {
+   onAddBookmark: Event
+      @aws_subscribe(mutations: ["addBookmark"])
+   onDelBookmark: Event
+      @aws_subscribe(mutations: ["delBookmark"])
+}
